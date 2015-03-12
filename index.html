@@ -43,7 +43,7 @@
                     <i class="nav fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img class="sylogo" src="/img/sylogo.png" ></img>
+                    <img id="sylogo" src="/img/sylogo.png"></img>
                 </a>
             </div>
 
@@ -73,11 +73,12 @@
 
     <!-- Intro Header -->
     <header class="intro">
-      <div class="overlay"></div>
         <div class="intro-body">
           <div class="intro-words">
-          <h1 class="brand-heading wow fadeInDown" data-wow-delay="0.2s">Hello, I'm Sarah.</h1><hr id="intro">
-            <div class="wow fadeInUp"  data-wow-delay="0.5s"> <div class="intro-text"></div></div>
+            <div class="brand-heading wow bounceIn">
+            <img class="intro-img img-responsive img-circle" src="/img/sy-logo.png" ></img></div>
+          <h1 class="brand-heading wow fadeInDown" data-wow-delay="0.3s" >Hi, I'm Sarah.</h1>
+            <div class="intro-text wow fadeInUp"  data-wow-delay="0.6s">I like to make cool things.</div>
             </div>
               </div>
               <div class="button-wrapper">
@@ -95,16 +96,17 @@
        <!-- About Section -->
     <section id="about" class="section">
         <div class="content">
-            <h2>About</h2>
+            <h2 class="wow bounceIn">About</h2>
             <div class="byline"> "The best way to predict the future is to invent it." <br> ― Alan Kay</div>
             <hr>
         <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.3s">
           <h4> About Me </h4>
             <p> 
-              Hi, I'm Sarah Yeo, software developer and second year computer science student at the University of British Columbia. I like crunching big numbers and weaving beautiful code. I'm passionate about the details, quality is the name of the game. Find me in the pool, trudging through coursework or working on my next big project! </p> </div>
-         <div class="col-sm-4"><img class="me img-responsive img-circle" src="/img/me.jpg" ></img></div>
-          <div class="col-sm-4"><h4>Skills</h4>
+              Hi, I'm Sarah Yeo, software developer and second year computer science student at the University of British Columbia. I enjoy swimming, coding cool things and anything to do with Pokemon. Find me at the pool, trudging through coursework or working on my next big project! </p> </div>
+         <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+          <img class="me img-responsive img-circle" src="/img/me.png" ></img></div>
+          <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.3s"><h4>Skills</h4>
             <p class="skills"> <b>Programming Languages:</b><br>
             Java, C/C++, Racket, Python</p>
             <p class="skills"><b>Web Development:</b><br>
@@ -122,7 +124,7 @@
        <!-- Projects Section -->
     <section id="projects" class="section text-center">
         <div id="projects" class="content">
-            <h2>Projects</h2>
+            <h2 class="wow bounceIn">Projects</h2>
             <div class="byline"> "I find that the harder I work, the more luck I seem to have."<br> ― Thomas Jefferson"
             </div>
             <hr>
@@ -132,8 +134,8 @@
   <button class="wow fadeInRight" data-filter=".web">Web</button>
   <button class="wow fadeInRight" data-wow-delay="0.2s" data-filter=".other">Other</button>
 </div>-->
-          <div class="wrapper project">
-        <div class="isotope">
+          <div class="wrapper project wow fadeInUp" data-wow-delay="0.3s">
+        <div class="isotope ">
             <div class="isotope-item mobile">
             <a class="copsnrobbers_open" href="#copsnrobbers">
             <div class="fadehover">
@@ -150,7 +152,7 @@
             </a>
             </div>
              <div class="isotope-item web">
-                <a class="warehouse_open" href="#warehouse">
+                <a class="warehouse_open" href= "#warehouse">
             <div class="fadehover">
                 <img src="img/placeholder-project.png" alt="" class="color" />
                 <div class="info">   
@@ -166,7 +168,7 @@
             </div>
              <div class="isotope-item mobile">
                 <a class="restaurant_open" href="#restaurant">
-            <div class="fadehover">
+           <div class="fadehover">
                 <img src="img/restaurant.png" alt="" class="color" />
                 <div class="info">   
                   <div class="info-body"> 
@@ -182,7 +184,7 @@
         <div class="isotope-item other">
                 <a class="researchproject_open" href="#researchproject">
             <div class="fadehover">
-                <img src="img/research.png" alt="" class="color" />
+                <img src="img/research4.png" alt="" class="color" />
                 <div class="info">   
                   <div class="info-body"> 
                     <div class="info-header">Research Project</div>
@@ -210,7 +212,7 @@
     <div class="project-text"> 
       <div class="research-project-title">
      Chase or be chased, an addicting take on a well-loved classic.</div>
-       Simple yet deeply strategic, Cops n' Robbers is a fresh one button take on a playground classic. With a wide variety of layouts and locations, you'll always be wanting to play one more round! 
+       Simple yet deeply strategic, Cops n' Robbers is a fresh one-button take on a playground classic. With a wide variety of layouts and locations, you'll always be wanting to play one more round! 
        <br>
        <br>
        <b> The tech: </b> Android, Java, JUnit, IntelliJ, Git
@@ -232,25 +234,25 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/cnr1.png" alt="...">
+      <img src="/img/cnr1.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/cnr2.png" alt="...">
+      <img src="/img/cnr2.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/cnr3.png" alt="...">
+      <img src="/img/cnr3.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/cnr4.png" alt="...">
+      <img src="/img/cnr4.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
@@ -323,19 +325,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/placeholder.png" alt="...">
+      <img src="/img/placeholder.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/placeholder.png" alt="...">
+      <img src="/img/placeholder.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/placeholder.png" alt="...">
+      <img src="/img/placeholder.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
@@ -401,13 +403,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/restaurant1.png" alt="...">
+      <img src="/img/restaurant1.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/restaurant2.png" alt="...">
+      <img src="/img/restaurant2.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
@@ -451,7 +453,7 @@
     <div class="project-text">  <div class="research-project-title">
       Discovering host specific adaptive mutations in pathogenic organisms.</div>Developed an analytical pipeline that given a set of genomic reads isolated from a pathogen, is capable of identifying and ranking mutations by their potential biological significance. Presented at the Multidisciplinary Undergraduate Research Conference, 2015.
        <br> <br>
-      <b> The tech: </b> Python, Make, Muscle, VCF Tools, Git
+      <b> The tech: </b> Python, Make, Muscle, VCF Tools, RAxML, Git
     </div>
 
 </div>
@@ -468,19 +470,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/placeholder.png" alt="...">
+      <img src="/img/project1.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/placeholder.png" alt="...">
+      <img src="/img/placeholder.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/placeholder.png" alt="...">
+      <img src="/img/placeholder.png" alt="..." class="img-responsive project-image">
       <div class="carousel-caption">
           <h3></h3>
       </div>
@@ -499,7 +501,7 @@
 
     <span id="info"> <i class="info fa fa-pencil-square-o"></i> Other</span><br>
     <span id="info"> <i class="info fa fa-calendar"></i> March 2015 </span><br>
-    <a class="info" href="#"> <span id="info"> <i class="info fa fa-picture-o"></i> View the Poster</span></a>
+    <a class="info" href="img/poster.pdf"> <span id="info"> <i class="info fa fa-picture-o"></i> View the Poster</span></a>
     </div>
 <div class="col-wrapper">
     <div class="col-left">
@@ -523,17 +525,17 @@
     <!-- Contact Section -->
     <section id="contact" class="section text-center">
         <div class="content">
-            <h2>Contact</h2>
+            <h2 class="wow bounceIn">Contact</h2>
             <div class="byline"> "The best way to show a giraffe your love is to knit a scarf for it." <br> ― Anonymous </div>
             <hr id="contact">
-        <div id"contact" class="row">
-          <div class="col-sm-6"> 
+        <div id="contact" class="row">
+          <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.3s"> 
             <ul class="no-bullets">
               <li class="contact"><a href="mailto:hello@sarahy.me"> <i class="contact fa fa-envelope-o"></i> sarah@sarahy.me</a></li>
               <li class="contact"><a href="http://ca.linkedin.com/in/sarahyeo"><i class="contact fa fa-linkedin-square"></i> http://ca.linkedin.com/in/sarahyeo </a></li>
             </ul>
           </div>
-          <div class="col-sm-6"> 
+          <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.3s"> 
             <ul class="no-bullets">
               <li class="contact"><a href="img/resume-web.pdf"><i class="contact fa fa-file-text-o"></i> Resume</a></li>
               <li class="contact"><a href="https://github.com/sarahyeo"><i class="contact fa fa-github fa-fw"></i> https://github.com/sarahyeo</a></li>
@@ -557,7 +559,7 @@
 
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/masonry.min.js"></script>
     <script src="js/jquery.popupoverlay.js"></script>
 

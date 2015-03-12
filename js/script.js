@@ -5,11 +5,21 @@
  */
 
 // jQuery to collapse the navbar on scroll
+var hidden = true;
+
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        if (hidden) {
+          $("#sylogo").css('visibility', 'visible');
+          hidden = false;
+        }
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        if (!hidden) {
+          $("#sylogo").css('visibility', 'hidden');
+          hidden = true;
+        }
     }
 });
 
@@ -83,7 +93,7 @@ $(document).ready(function () {
 
 });
 
-
+/*
 var div = $('.intro-text').hide(),
     news = ['Software developer.', 'Computer science student.'],
     count = 0;
@@ -98,3 +108,4 @@ function changeNews() {
 }
 
 changeNews();
+*/

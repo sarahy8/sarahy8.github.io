@@ -27,7 +27,7 @@ html {
 h1 {
     text-align: center;
     font-size: 80px;
-    font-weight: 300;
+    font-weight: 400;
 }
    
 h2
@@ -123,15 +123,24 @@ a:focus {
 
 /* ----- Nav Bar -----*/
 
-.sylogo {
-    height: 50px;
-    width: 70px;
-    padding: 0px 10px;
-    margin: auto;
+#sylogo {
+    height: 40px;
+    width: 40px;
+    padding: 0px 0px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(255,255,255);
+    background-color: rgba(255, 255, 255, .25);
+    visibility: hidden;
+}
+
+#sylogo:hover {
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .nav {
     color: #fff;
+    font-weight: 400;
 }
 
 .navbar-custom .navbar-toggle {
@@ -214,6 +223,11 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
+
+    .sylogo {
+        visibility: hidden;
+    }
+
 }
 
 /* ----- Intro -----*/
@@ -229,7 +243,7 @@ section#intro {
     height: 100vh;
     min-height: 350px;
 }
-*/
+
 
 
 .overlay {
@@ -239,8 +253,8 @@ section#intro {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    opacity: 0.75;
-    filter: alpha(opacity=75);
+    opacity: 0.4;
+    filter: alpha(opacity=4);
     z-index: 2;
 }
 
@@ -252,16 +266,36 @@ section#intro {
     right: 0px;
     z-index: 1;
 
-    background: url(/img/background6.jpg) no-repeat bottom center;
+    background: url(/img/background1.jpg) no-repeat bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 
+}*/
+
+@media only screen and (max-width: 640px) {
+  .intro {
+    background: url(/img/background640.jpg) no-repeat bottom center fixed;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1200px) {
+  .intro {
+    background: url(/img/background1200.jpg) no-repeat bottom center fixed;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+  .intro{
+    background: url(/img/background1920.jpg) no-repeat bottom center fixed;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .intro {
+    background: url(/img/background.jpg) no-repeat bottom center fixed;
+  }
 }
 
 .intro {
-    background: url(/img/background.jpg) no-repeat bottom center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -271,16 +305,22 @@ section#intro {
     padding: 200px 0;
     text-align: center;
     color: #fff;
-    background-color: #22A39F;
-    min-height: 600px;
-   position: relative;
+    min-height: 750px;
+    position: relative;
 }
 
 .intro .intro-body {
     width: 100%;
     position: absolute;
-    top: 28%;  
+    top: 15%;  
     z-index: 4;
+}
+
+img.intro-img {
+    width: 200px;
+    margin: 40px auto;
+    border: 8px solid #F0F0F0;
+    background-color: rgba(255, 255, 255, .25);
 }
 
 .intro .intro-words {
@@ -294,15 +334,16 @@ section#intro {
 
 .intro .intro-body .intro-text {
     font-size: 30px;
+    font-weight: 300;
 }
 
 
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .intro {
         height: 100vh;
         padding: 100px 0;
-        min-height: 500px;
+        min-height: 700px;
     }
 
     .intro .intro-body{
@@ -516,7 +557,7 @@ img.color {
 
     /*background: url(/img/black.png);*/
 
-    background-color: #434242;
+    background-color: #383838;
     padding: 20px;
     max-width: 1030px;
     color: #fff;
@@ -561,11 +602,17 @@ img.color {
     margin-left: auto;
   }
 
+.project-image {
+    width: 650px;
+    height: 390px;
+}
+
 
 .project-text {
     font-size: 16px;
     padding-left: 10px;
     padding-right: 15px;
+    margin-bottom: 20px;
 }
 
 .project-button {
@@ -674,7 +721,7 @@ ul.no-bullets {
 }
 
 li.contact {
-    margin: 10px;
+    margin: 10px 0px;
     font-size: 15px;
     font-weight: 300;
 }
