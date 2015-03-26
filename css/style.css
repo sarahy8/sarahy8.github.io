@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -17,6 +19,15 @@ html {
 
 .content {
     max-width: 800px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-project {
+    max-width: auto;
     margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -78,7 +89,7 @@ hr {
 }
 
 hr#intro {
-    margin: 20px 45px;
+    margin: 15px 65px;
     border-color: #FFF;
     opacity: 0.8;
     filter: alpha(opacity=8);
@@ -130,12 +141,11 @@ a:focus {
     margin: 5px 10px;
     border-radius: 50%;
     border: 2px solid rgb(255,255,255);
-    background-color: rgba(255, 255, 255, .25);
     visibility: hidden;
 }
 
 #sylogo:hover {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, .25);
 }
 
 .nav {
@@ -272,7 +282,7 @@ section#intro {
     background-size: cover;
     -o-background-size: cover;
 
-}*/
+}
 
 @media only screen and (max-width: 640px) {
   .intro {
@@ -286,20 +296,63 @@ section#intro {
 }
 @media only screen and (min-width: 1201px) and (max-width: 1920px) {
   .intro{
-    background: url(/img/background1920.jpg) no-repeat bottom center fixed;
+    background: url(/img/backgroundb1.jpg) no-repeat bottom center fixed;
   }
 }
 @media only screen and (min-width: 1921px) {
   .intro {
     background: url(/img/background.jpg) no-repeat bottom center fixed;
   }
+}*/
+
+
+ .intro-image {
+    max-height: 550px;
+    margin: auto;
+ }
+
+  .intro-image-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
+
+  .intro-image1 {
+    max-height: 550px;
+    margin: auto;
+    z-index: -999;
+ }
+
+  .intro-image-wrapper1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+ }
+
+ .background-image {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    background: url(/img/test-full.png) no-repeat bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
 }
+
+
+
 
 .intro {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background: url(/img/test-b1.png) no-repeat bottom center fixed;
     width: 100%;
     height: 100vh;
     padding: 200px 0;
@@ -307,17 +360,19 @@ section#intro {
     color: #fff;
     min-height: 750px;
     position: relative;
+    background-color: #00A8A2 ;
 }
 
 .intro .intro-body {
     width: 100%;
     position: absolute;
-    top: 15%;  
+    top: 18%;  
     z-index: 4;
 }
 
 img.intro-img {
     width: 200px;
+    height: 200px;
     margin: 40px auto;
     border: 8px solid #F0F0F0;
     background-color: rgba(255, 255, 255, .25);
@@ -356,7 +411,7 @@ img.intro-img {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 80px;
+        font-size: 70px;
 
     }
 
@@ -476,12 +531,19 @@ section#projects {
     background-color:#F0F0F0;
 }
 
+.project-title {
+    max-width: 760px;
+    margin: auto;
+}
+
 .fadehover {
     position: relative;
     width: 285px; /* put your image width in pixels here */
     height: 285px; /* put your image height in pixels here */
     border-radius: 100%;
-    border: 10px solid  #C5DBDA;
+    margin: auto;
+    /*border: 10px solid  #C5DBDA;*/
+    border: 10px solid  #C8C8C8;
     overflow: hidden;
     -webkit-transform: translateZ(0);
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
@@ -557,7 +619,7 @@ img.color {
 
     /*background: url(/img/black.png);*/
 
-    background-color: #383838;
+    background-color: #262626;
     padding: 20px;
     max-width: 1030px;
     color: #fff;
@@ -601,6 +663,10 @@ img.color {
     margin-right: auto;
     margin-left: auto;
   }
+
+.carousel-control {
+    width: 20%;
+}
 
 .project-image {
     width: 650px;
@@ -678,7 +744,7 @@ i.info {
 
 
 section#contact {
-    background-color: #383838 ;
+    background-color: #262626;
 }
 
 #contact .row {
@@ -716,7 +782,7 @@ ul.no-bullets {
     list-style-type: none;
     text-align: left;
     margin: 0;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
 
 }
 
@@ -726,10 +792,14 @@ li.contact {
     font-weight: 300;
 }
 
+.col-sm-6 {
+    margin: 0px;
+}
+
 /* ----- Footer -----*/
 
 footer {
-    background-color: #383838 ;
+    background-color: #262626 ;
     padding: 0px 0px 40px;
 }
 
@@ -767,7 +837,7 @@ body {
 /**** Isotope filtering ****/
 
 .wrapper.project {
-    max-width: 915px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
