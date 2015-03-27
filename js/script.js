@@ -11,7 +11,7 @@ $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         if (hidden) {
-          $("#sylogo").css('visibility', 'visible');
+         $("#sylogo").css('visibility', 'visible');
           hidden = false;
         }
     } else {
@@ -92,6 +92,11 @@ $(document).ready(function () {
     });
 
 });
+
+var images = ['background16.jpg', 'background17.jpg', 'background3.jpg', 'background15.jpg', 'background2.jpg', 'background.jpg'];
+$('.intro').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+
 
 /*
 var div = $('.intro-text').hide(),
