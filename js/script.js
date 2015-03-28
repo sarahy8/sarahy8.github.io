@@ -10,16 +10,16 @@ var hidden = true;
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        if (hidden) {
-         $("#sylogo").css('visibility', 'visible');
-          hidden = false;
-        }
+        // if (hidden) {
+        //  $("#sylogo").css('visibility', 'visible');
+        //   hidden = false;
+        // }
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        if (!hidden) {
-          $("#sylogo").css('visibility', 'hidden');
-          hidden = true;
-        }
+        // if (!hidden) {
+        //   $("#sylogo").css('visibility', 'hidden');
+        //   hidden = true;
+        // }
     }
 });
 
@@ -88,7 +88,7 @@ $(document).ready(function () {
     $('.projectpopup').popup({
         pagecontainer: '.container',
         transition: 'all 0.3s',
-        //scrolllock: true
+        scrolllock: true
     });
 
 });
