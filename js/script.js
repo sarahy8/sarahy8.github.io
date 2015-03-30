@@ -133,3 +133,9 @@ function check_input() {
     }
 };
 */
+
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+
+
