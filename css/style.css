@@ -349,7 +349,7 @@ section#intro {
 .intro .intro-body {
     width: 100%;
     position: absolute;
-    top: 18%;  
+    top: 20%;  
     z-index: 4;
     padding: 20px;
 }
@@ -413,7 +413,7 @@ img.intro-img {
 
 section#about {
     background: url(/img/crossword.png);
-
+    border-top: solid 1px #bdc3c7;
 }
 
 
