@@ -93,8 +93,8 @@ $(document).ready(function () {
 
 });
 
-var images = ['background3.jpg', 'background15.jpg'];
-$('.intro').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+// var images = ['background3.jpg', 'background15.jpg'];
+// $('.intro').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 
 
