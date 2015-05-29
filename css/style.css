@@ -42,6 +42,7 @@ h1 {
    
 h2
 {
+    font-family: 'Slabo 27px', serif;
     text-align: center;
     font-size: 54px;
     color: #2980b9;
@@ -52,15 +53,17 @@ h2
 
 h3
 {
+    font-family: 'Slabo 27px', serif;
     font-size: 32px;
     text-align: center;
-    color: #FFF;
+    color: #3498DB;
     font-weight: 300;
 }
 
 
 h4
 {
+    font-family: 'Slabo 27px', serif;
     font-size: 28px;
     text-align: center;
     color: #2980b9;
@@ -96,17 +99,24 @@ hr#intro {
 }
 
 hr#project-card {
-    border-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(0, 0, 0, 0.6);
     margin: 20px 5px;
     padding-top: 5px;
 }
 
+hr#project {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
 hr#contact {
     margin-bottom: 20px;
+    border-color: rgba(255, 255, 255, 0.6);
+
 }
 
 hr#contact-bottom {
     margin: 15px;
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
 p {
@@ -114,7 +124,6 @@ p {
     text-align: left;
     font-size: 15px;
     line-height: 1.5;
-    color: #000;
 }
 
 a {
@@ -127,7 +136,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: rgba(255,255,255,.7);
+    color: #3c9cdd;
     outline: none;
 }
 
@@ -164,7 +173,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
-    background-color: #555;
+    background-color: rgba(0, 0, 0, 0.8);
     font-size: 16px;
     font-weight: 400;
 }
@@ -239,7 +248,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: #555;
+        background-color: #333;
     }
 
 /*    .sylogo {
@@ -322,7 +331,7 @@ section#intro {
     left: 0px;
     right: 0px;
 
-    background: url(/img/test-full8.png) no-repeat bottom center;
+    background: url(/img/test-full11.png) no-repeat bottom center;
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -343,7 +352,7 @@ section#intro {
     width: 100%;
     height: 100vh;
     text-align: center;
-    color: #2980b9;
+    color: #fff;
     background-color: #fff; 
     min-height: 750px;
     position: relative;
@@ -373,6 +382,7 @@ img.intro-img {
 
 .intro .intro-body .brand-heading {
     font-size: 60px;
+    font-family: 'Slabo 27px', serif;
 }
 
 .intro .intro-body .intro-text {
@@ -400,6 +410,7 @@ img.intro-img {
 
     .intro .intro-body .brand-heading {
         font-size: 70px;
+        font-family: 'Slabo 27px', serif;
 
     }
 
@@ -416,8 +427,8 @@ img.intro-img {
 }
 
 section#about {
-    background: url(/img/crossword.png);
-    background-color: #fff
+    /*background: url(/img/crossword.png);*/
+    background-color: #fff;
     border-top: solid 1px #bdc3c7;
 }
 
@@ -437,6 +448,7 @@ img.me {
 @media(max-width:768px) {
     .skills {
         text-align: center;
+        color: #fff;
     }
 }
 
@@ -446,14 +458,25 @@ img.me {
 
 
 section#projects {
-    background-color:#eaeef2;
+    background-color:#34495E;
     /*background-color:#fff;*/
+    color: #fff;
     
 }
+
+.project-heading {
+    color: #fff;
+}
+
+.project-byline {
+    color: #D3D3D3;
+}
+
 
 .project-title {
     max-width: 760px;
     margin: auto;
+    color: #fff;
 }
 
 .fadehover {
@@ -477,7 +500,8 @@ section#projects {
     text-align: center;
     top: 285px;
     left: 0;
-    background-color:  rgba(41, 128, 185, 0.9);
+    background-color:  rgba(60,156,221, 0.9);
+   /* background-color: rgba(0, 0, 0, 0.8);*/
     -webkit-transition: top 0.4s ease-in-out;
     -moz-transition: top 0.4s ease-in-out;
     }
@@ -489,6 +513,7 @@ section#projects {
 
 
 .info-header {
+    font-family: 'Slabo 27px', serif;
     top: 133px;
     font-size: 24px;
     color: #fff;
@@ -532,13 +557,13 @@ img.color {
         -ms-transform: scale(0.8);
             transform: scale(0.8);
 
-    /*background: url(/img/black.png);*/
+    /*background: url(/img/texture.png);*/
     /*background-color: #262626 ;*/
 
-    background-color: #22313F;
+    background-color: #fff;
     padding: 20px;
     max-width: 1030px;
-    color: #fff;
+    color: #000;
 
 }
 
@@ -566,7 +591,7 @@ img.color {
 .research-project-title {
     margin-bottom: 15px;
     margin-top: 20px;
-    color: #2980b9;
+    color: #3c9cdd;
     font-weight: 400;
     text-align: center;
 }
@@ -649,22 +674,22 @@ i.info {
 }
 .people-text {
     font-weight: 300;
-    color: #2980b9;
+    color: #3c9cdd;
 }
 
 .button {
     /*background-color: #3498db;*/
     /*border-radius: 4px;*/
-    background-color: #22313F;
-    border: 2px solid #2980b9;
+    background-color: #fff;
+    border: 2px solid #3c9cdd;
     padding: 6px 12px;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #2980b9;
+    color: #3c9cdd;
 }
 .button:hover {
-    background-color: #2980b9;
+    background-color: #3c9cdd;
     color: #fff;
 }
 
@@ -673,8 +698,16 @@ i.info {
 
 
 section#contact {
-    background: url(/img/black_linen_v2.png);
-    background-color: #262626 ;
+    /*background: url(/img/black_linen_v2.png);*/
+    background-color: #222;
+   /*background: url(/img/background4.jpg);
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;*/
 }
 
 #contact .row {
@@ -683,21 +716,22 @@ section#contact {
 }
 
 i.contact {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
     font-size: 25px;
     vertical-align: middle;
     text-align: center;
     color: #262626;
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 2px;
+    border-radius: 50%;
     margin: 5px;
     margin-right: 10px;
 }
 
 a:hover i.contact {
-        background-color: rgba(255,255,255,.7);
+        background-color: #3c9cdd;
+        color: #fff;
 }
 
 
@@ -729,8 +763,8 @@ li.contact {
 /* ----- Footer -----*/
 
 footer {
-    background: url(/img/black_linen_v2.png);
-    background-color: #262626 ;
+    /*background: url(/img/black_linen_v2.png);*/
+    background-color: #333;
     padding: 0px 0px 40px;
 }
 
@@ -738,6 +772,16 @@ footer p {
     margin: 0;
     text-align: center;
     color: #727878;
+}
+
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+
+p.footer {
+    text-align: center;
+    color: #fff;
 }
 
 

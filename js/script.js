@@ -100,7 +100,7 @@ $(document).ready(function () {
 
 
 var div = $('.intro-text').hide(),
-    news = ['Software developer and student.', 'Based out of Vancouver, BC.'],
+    news = ['Software developer and student', 'Based out of Vancouver, BC'],
     count = 0;
 
 function changeNews() {
