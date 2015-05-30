@@ -114,8 +114,25 @@ function changeNews() {
 
 changeNews();
 
-$(window).load(function() {
-  $(".loader").fadeOut("slow");
-})
+// $(window).load(function() {
+//   $(".loader").fadeOut("slow");
+// })
+
+window.onload=function(){
+  $('.autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: true,
+  infinite: true,
+  fade:true,
+  cssEase: 'linear',
+  touchThreshold: 1000,
+  mobileFirst: true,
+  arrows: false,
+});
+}
+
 
 
