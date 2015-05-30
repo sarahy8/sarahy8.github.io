@@ -10,16 +10,8 @@ var hidden = true;
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        // if (hidden) {
-        //  $("#sylogo").css('visibility', 'visible');
-        //   hidden = false;
-        // }
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        // if (!hidden) {
-        //   $("#sylogo").css('visibility', 'hidden');
-        //   hidden = true;
-        // }
     }
 });
 
@@ -48,41 +40,6 @@ var msnry = new Masonry( container, {
   isFitWidth: true
 });
 
-
-// jQuery
-/*
-var $container = $('.isotope');
-// init
-$container.isotope({
-  // options
-  itemSelector: '.isotope-item',
-  //animationEngine : 'best-available',
-  masonry: {
-  columnWidth: 305,
-  //isFitWidth: true
-},
-
-});
-
-
-// filter items on button click
-$('#filters').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $container.isotope({ filter: filterValue });
-});
-
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
-
-*/
-
-
 $(document).ready(function () {
 
     $('.projectpopup').popup({
@@ -92,11 +49,6 @@ $(document).ready(function () {
     });
 
 });
-
-// var images = ['background3.jpg', 'background15.jpg'];
-// $('.intro').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
-
-
 
 
 var div = $('.intro-text').hide(),
@@ -112,27 +64,4 @@ function changeNews() {
     }
 }
 
-changeNews();
-
-// $(window).load(function() {
-//   $(".loader").fadeOut("slow");
-// })
-
-window.onload=function(){
-  $('.autoplay').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  dots: true,
-  infinite: true,
-  fade:true,
-  cssEase: 'linear',
-  touchThreshold: 1000,
-  mobileFirst: true,
-  arrows: false,
-});
-}
-
-
-
+changeNews();x
