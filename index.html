@@ -2,610 +2,534 @@
 <html lang="en">
 
 <head>
+  <!-- ==============================================
+  Title and Meta Tags
+  =============================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Sarah Yeo</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- ==============================================
+  Favicons
+  =============================================== -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 
-    <title>Sarah Yeo</title>
+  <!-- ==============================================
+  CSS
+  =============================================== -->  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet"> 
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <!-- ==============================================
+  Fonts
+  =============================================== -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap Core CSS -->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <!-- ==============================================
+  JS
+  =============================================== -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet" /> 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    ga('create', 'UA-63573093-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <!-- <div class="loader"></div> -->
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="nav fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img id="sylogo" src="/img/sy-logo.png"></img>
-                </a>
-            </div>
+  <!-- ==============================================
+  MAIN NAV
+  =============================================== -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="nav fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <img id="sylogo" src="/img/sy-logo.png"></img>
+        </a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="nav page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="nav page-scroll" href="#projects">Projects</a>
-                    </li>
-<!--                     <li>
-                        <a class="nav page-scroll" href="#experience">Experience</a>
-                    </li> -->
-                    <li>
-                        <a class="nav page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="nav page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav page-scroll" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="nav page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+
+  <!-- ==============================================
+  HEADER
+  =============================================== -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="intro-words">
+        <div class="wow fadeInDown"  data-wow-delay="0.6s" >
+          <h1 class="brand-heading">Hi, I'm Sarah Yeo</h1>
         </div>
-        <!-- /.container -->
-    </nav>
+          <div class="intro-text wow fadeInUp"  data-wow-delay="0.6s"></div>
+      </div>
+    </div>
+    <div class="background-image"></div>
+  </header>
 
-
-    <!-- Intro Header -->
-    <header class="intro">
-
-        <div class="intro-body">
-          <div class="intro-words">
-            <div class="wow fadeInDown"  data-wow-delay="0.6s" >
-          <h1 class="brand-heading">Hi, I'm Sarah Yeo</h1></div>
-            <div class="intro-text wow fadeInUp"  data-wow-delay="0.6s"></div>
-            </div>
-              </div>
-            <div class="background-image"></div>
-    </header>
-
-
-
-      
- <!-- About Section -->
-    <section id="about" class="section">
-        <div class="content">
-            <h2 class="wow bounceIn">About</h2>
-            <div class="byline"> "The best way to predict the future is to invent it." <br> ― Alan Kay</div>
-            <hr>
-        <div class="row">
+  <!-- ==============================================
+  ABOUT
+  =============================================== -->     
+  <section id="about" class="section">
+    <div class="content">
+      <h2 class="wow bounceIn">About</h2>
+      <div class="byline"> "The best way to predict the future is to invent it." <br> ― Alan Kay</div>
+      <hr>
+      <div class="row">
         <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.4s">
           <h4> About Me </h4>
-            <p> 
-              Hi, I'm Sarah Yeo, software developer and second year computer science student at the University of British Columbia. I enjoy swimming, coding cool things and Pokemon. Find me at the pool, trudging through coursework or working on my next big project! </p> </div>
-         <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
-          <img class="me img-responsive img-circle" src="/img/me.png" ></img></div>
-          <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.4s"><h4>Skills</h4>
-            <p class="skills"> <b>Programming Languages:</b><br>
-            Java, C/C++, Racket, Python</p>
-            <p class="skills"><b>Web Development:</b><br>
-             HTML5, CSS3, Javscript </p>
-            <p class="skills"><b>Mobile Development:</b><br>
-             Android</p>
-            <p class="skills"><b>Other:</b><br>
-              Git, SVN, LaTex, Vim</p></div></div>
-  </div>
-    </section>
+          <p> 
+          Hi, I'm Sarah Yeo, software developer and second year computer science student at the University of British Columbia. I enjoy swimming, coding cool things and Pokemon. Find me at the pool, trudging through coursework or working on my next big project! </p> 
+        </div>
+        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+          <img class="me img-responsive img-circle" src="/img/me.png" ></img>
+        </div>
+        <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.4s">
+          <h4>Skills</h4>
+          <p class="skills"> <b>Programming Languages:</b><br>Java, C/C++, Racket, Python</p>
+          <p class="skills"><b>Web Development:</b><br>HTML5, CSS3, Javscript </p>
+          <p class="skills"><b>Mobile Development:</b><br>Android</p>
+          <p class="skills"><b>Other:</b><br>Git, SVN, LaTex, Vim</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ==============================================
+  PROJECTS
+  =============================================== -->
+  <section id="projects" class="section text-center">
+    <div id="projects" class="content-project">
+      <div class="project-title">
+        <h2 class="project-heading wow bounceIn">Projects</h2>
+        <div class="project-byline byline"> "I find that the harder I work, the more luck I seem to have."<br> ― Thomas Jefferson"</div>
+        <hr id="project">
+      </div>
 
+    <div class="wrapper project">
+      <div class="isotope ">
 
-
-       <!-- Projects Section -->
-    <section id="projects" class="section text-center">
-        <div id="projects" class="content-project">
-          <div class="project-title">
-            <h2 class="project-heading wow bounceIn">Projects</h2>
-            <div class="project-byline byline"> "I find that the harder I work, the more luck I seem to have."<br> ― Thomas Jefferson"
-            </div>
-            <hr id="project">
-          </div>
-<!--<div id="filters" class="button-group">
-  <button class="is-checked wow fadeInLeft" data-wow-delay="0.2s" data-filter="*">All</button>
-  <button class="wow fadeInLeft " data-filter=".mobile">Mobile</button>
-  <button class="wow fadeInRight" data-filter=".web">Web</button>
-  <button class="wow fadeInRight" data-wow-delay="0.2s" data-filter=".other">Other</button>
-</div>-->
-          <div class="wrapper project">
-        <div class="isotope ">
-            <div class="isotope-item mobile">
-            <a class="copsnrobbers_open" href="#copsnrobbers">
+        <div class="isotope-item mobile">
+          <a class="copsnrobbers_open" href="#copsnrobbers">
             <div class="wow fadeInUp fadehover" data-wow-delay="0.2s">
-                <img src="img/copsnrobbers-color.png" alt="" class="color" />
-                <div class="info">   
-                  <div class="info-body"> 
-                    <div class="info-header">Cops n' Robbers</div>
-                    <hr id="info">
-                    <div class="info-text">An addictive, two-player Android game</div>
-                     <div class="info-tag"><b> Tags: </b> Mobile Development</div>
+              <img src="img/copsnrobbers-color.png" alt="" class="color" />
+              <div class="info">   
+                <div class="info-body"> 
+                  <div class="info-header">Cops n' Robbers</div>
+                  <hr id="info">
+                  <div class="info-text">An addictive, two-player Android game</div>
+                  <div class="info-tag"><b> Tags: </b> Mobile Development</div>
                 </div>
-                </div>
+              </div>
             </div>
-            </a>
-            </div>
+          </a>
+        </div>
 
-            <div class="isotope-item mobile">
-                <a class="ecogem_open" href="#ecogem">
+        <div class="isotope-item mobile">
+          <a class="ecogem_open" href="#ecogem">
             <div class="wow fadeInUp  fadehover" data-wow-delay="0.3s">
-                <img src="img/ecogem-logo.png" alt="" class="color" />
-                <div class="info">   
-                  <div class="info-body"> 
-                    <div class="info-header">EcoGEM</div>
-                    <hr id="info">
-                    <div class="info-text">An eco-friendly Android application</div>
-                     <div class="info-tag"><b> Tags: </b> Mobile</div>
+              <img src="img/ecogem-logo.png" alt="" class="color" />
+              <div class="info">   
+                <div class="info-body"> 
+                  <div class="info-header">EcoGEM</div>
+                  <hr id="info">
+                  <div class="info-text">An eco-friendly Android application</div>
+                  <div class="info-tag"><b> Tags: </b> Mobile</div>
                 </div>
-                </div>
+              </div>
             </div>
-             </a>
-            </div>
-             <div class="isotope-item mobile">
-                <a class="restaurant_open" href="#restaurant">
-           <div class="wow fadeInUp  fadehover" data-wow-delay="0.4s">
-                <img src="img/restaurant-logo1.png" alt="" class="color" />
-                <div class="info">   
-                  <div class="info-body"> 
-                    <div class="info-header">Restaurant Quiz</div>
-                    <hr id="info">
-                    <div class="info-text">An interactive guessing game</div>
-                     <div class="info-tag"><b> Tags: </b> Mobile Development</div>
-                </div>
-                </div>
-            </div>
-             </a>
+          </a>
         </div>
+
+        <div class="isotope-item mobile">
+          <a class="restaurant_open" href="#restaurant">
+            <div class="wow fadeInUp  fadehover" data-wow-delay="0.4s">
+              <img src="img/restaurant-logo1.png" alt="" class="color" />
+              <div class="info">   
+                <div class="info-body"> 
+                  <div class="info-header">Restaurant Quiz</div>
+                  <hr id="info">
+                  <div class="info-text">An interactive guessing game</div>
+                  <div class="info-tag"><b> Tags: </b> Mobile Development</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
         <div class="isotope-item other">
-                <a class="researchproject_open" href="#researchproject">
+          <a class="researchproject_open" href="#researchproject">
             <div class="wow fadeInUp  fadehover" data-wow-delay="0.5s">
-                <img src="img/research-logo1.png" alt="" class="color" />
-                <div class="info">   
-                  <div class="info-body"> 
-                    <div class="info-header">Research Project</div>
-                    <hr id="info">
-                    <div id="research" class="info-text">Discovering host specific adaptive mutations in pathogenic organisms.</div>
-                     <div class="info-tag"><b> Tags: </b> Other</div>
+              <img src="img/research-logo1.png" alt="" class="color" />
+              <div class="info">   
+                <div class="info-body"> 
+                  <div class="info-header">Research Project</div>
+                  <hr id="info">
+                  <div id="research" class="info-text">Discovering host specific adaptive mutations in pathogenic organisms.</div>
+                  <div class="info-tag"><b> Tags: </b> Other</div>
                 </div>
-                </div>
+              </div>
             </div>
-             </a>
-            </div>
+          </a>
+        </div>
 
-                         <div class="isotope-item web">
-                <a class="warehouse_open" href= "#warehouse">
+        <div class="isotope-item web">
+          <a class="warehouse_open" href= "#warehouse">
             <div class="wow fadeInUp  fadehover" data-wow-delay="0.6s">
-                <img src="img/comingsoon.png" alt="" class="color" />
-                <div class="info">   
-                  <div class="info-body"> 
-                    <div class="info-header">Warehouse Wars</div>
-                    <hr id="info">
-                    <div class="info-text">A classic arcade web-based game</div>
-                     <div class="info-tag"><b> Tags: </b> Web Development</div>
+              <img src="img/comingsoon.png" alt="" class="color" />
+              <div class="info">   
+                <div class="info-body"> 
+                  <div class="info-header">Warehouse Wars</div>
+                  <hr id="info">
+                  <div class="info-text">A classic arcade web-based game</div>
+                  <div class="info-tag"><b> Tags: </b> Web Development</div>
                 </div>
-                </div>
+              </div>
             </div>
-             </a>
-            </div>
+          </a>
+        </div>
 
+      </div>
+    </div>
+
+
+  <!-- ==============================================
+  PROJECT CARD 
+   =============================================== -->
+  <!-- Projects CopsnRobbers -->
+  <div id="copsnrobbers" class="projectpopup">
+    <div class="copsnrobbers_close project-header">x</div>
+    <div class="row">
+      <div class="col-sm-4 col-sm-push-8 project-text">
+        <h3>Cops n' Robbers</h3>
+        <hr id="project-card">
+        <div class="project-text"> 
+          <div class="research-project-title">Chase or be chased, an addicting take on a well-loved classic.</div>
+          Simple yet deeply strategic, Cops n' Robbers is a fresh one-button take on a playground classic. With a wide variety of layouts and locations, you'll always be wanting to play one more round. Avalible on the Google Play store with over 100 downloads!<br><br>
+          <b> The tech: </b> Android, Java, JUnit, IntelliJ, Git
+        </div>
+        <div class="project-button">
+          <a href="https://play.google.com/store/apps/details?id=com.JassGames.CopsnRobbers" class="button">Get the App</a>
         </div>
       </div>
-
-
-
-<!-- Projects CopsnRobbers -->
-<div id="copsnrobbers" class="projectpopup">
-    <div class="copsnrobbers_close project-header">x</div>
-<div class="row">
-
-<div class="col-sm-4 col-sm-push-8 project-text">
-    <h3>Cops n' Robbers</h3>
-    <hr id="project-card">
-    <div class="project-text"> 
-      <div class="research-project-title">
-     Chase or be chased, an addicting take on a well-loved classic.</div>
-       Simple yet deeply strategic, Cops n' Robbers is a fresh one-button take on a playground classic. 
-       With a wide variety of layouts and locations, you'll always be wanting to play one more round.
-       Avalible on the Google Play store with over 100 downloads!
-       <br>
-       <br>
-       <b> The tech: </b> Android, Java, JUnit, IntelliJ, Git
-    </div>
-    <div class="project-button"><a href="https://play.google.com/store/apps/details?id=com.JassGames.CopsnRobbers" class="button">Get the App</a></div>
-
-</div>
-<div class="col-sm-8 col-sm-pull-4">
+      <div class="col-sm-8 col-sm-pull-4">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/img/cnr1.png" alt="..." class="img-responsive project-image">
+            </div>
+            <div class="item">
+              <img src="/img/cnr2.png" alt="..." class="img-responsive project-image">
+            </div>
+            <div class="item">
+              <img src="/img/cnr3.png" alt="..." class="img-responsive project-image">
+            </div>
+            <div class="item">
+              <img src="/img/cnr4.png" alt="..." class="img-responsive project-image">
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> <!-- Carousel -->
 
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
- 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/img/cnr1.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
-      </div>
-    </div>
-    <div class="item">
-      <img src="/img/cnr2.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
-      </div>
-    </div>
-    <div class="item">
-      <img src="/img/cnr3.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
-      </div>
-    </div>
-    <div class="item">
-      <img src="/img/cnr4.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
+        <div class="project-info">
+          <span id="info"> <i class="info fa fa-mobile"></i> Mobile Development</span><br>
+          <span id="info"> <i class="info fa fa-calendar"></i> December 2014 </span><br>
+          <a href="https://github.com/Shikib/CopsnRobbers"> <span id="info"> <i class="info fa fa-github"></i> View the Code</span></a>
+        </div>
+        <div class="col-wrapper">
+          <div class="col-left">
+            <span class="people"> Developers </span><br>
+            <span class="people-text"> Sarah Yeo <br> Shikib Mehri </span>
+          </div>
+          <div class="col-right">
+            <span class="people"> Designers </span><br>
+            <span class="people-text"> Jack Li <br> Arabelle Hou </span>
+          </div>
+        </div> 
+
       </div>
     </div>
   </div>
-    <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> <!-- Carousel -->
-
-    <div class="project-info">
-
-    <span id="info"> <i class="info fa fa-mobile"></i> Mobile Development</span><br>
-    <span id="info"> <i class="info fa fa-calendar"></i> December 2014 </span><br>
-    <a href="https://github.com/Shikib/CopsnRobbers"> <span id="info"> <i class="info fa fa-github"></i> View the Code</span></a>
-    </div>
-<div class="col-wrapper">
-    <div class="col-left">
-        <span class="people"> Developers </span><br>
-         <span class="people-text"> Sarah Yeo <br> Shikib Mehri </span>
-
-    </div>
-        <div class="col-right">
-             <span class="people"> Designers </span><br>
-              <span class="people-text"> Jack Li <br> Arabelle Hou </span>
-        </div>
-    </div> 
-
-</div>
-</div>
-</div>
 
 
-
-
-
-<!-- Projects Warehouse Wars -->
-<div id="warehouse" class="projectpopup">
-
+  <!-- Projects Warehouse Wars -->
+  <div id="warehouse" class="projectpopup">
     <div class="warehouse_close project-header">x</div>
-
     <div class="row">
-
-<div class="col-sm-4 col-sm-push-8 project-text">
-            <h3>Warehouse Wars</h3>
+      <div class="col-sm-4 col-sm-push-8 project-text">
+        <h3>Warehouse Wars</h3>
         <hr id="project-card">
-    <div class="project-text">  
-      <div class="research-project-title">Storage is serious business. </div>
-      Featuring local multiplayer just like arcade games of yesterday as well as 
-      single-player for thoes who prefer opposing their high score, Warehouse Wars is a web-based game that 
-      brings out everyones competitive streak.
-      <br> <br>
-      <b> The tech: </b> Phaser.js, Javascript, HTML5, MAMP, Git
-    </div>
-    <div class="project-button"><a href="#" class="button">Coming Soon</a></div>
-
-</div>
-<div class="col-sm-8 col-sm-pull-4">
-
-<img src="/img/placeholder.png" alt="..." class="img-responsive project-img">
-
-    <div class="project-info">
-
-    <span id="info"> <i class="info fa fa-globe"></i> Web Development</span><br>
-    <span id="info"> <i class="info fa fa-calendar"></i> February 2015 </span><br>
-    <a class="info" href="#"> <span id="info"> <i class="info fa fa-github"></i> View the Code</span></a>
-    </div>
-<div class="col-wrapper">
-    <div class="col-left">
-        <span class="people"> Developers </span><br>
-         <span class="people-text"> Sarah Yeo <br> Shikib Mehri </span>
-
-    </div>
-        <div class="col-right">
-             <span class="people"> Designers </span><br>
-              <span class="people-text"> Jack Li <br> Arabelle Hou </span>
+        <div class="project-text">
+          <div class="research-project-title">Storage is serious business. </div>
+          Featuring local multiplayer just like arcade games of yesterday as well as single-player for thoes who prefer opposing their high score, Warehouse Wars is a web-based game that brings out everyones competitive streak.<br><br>
+          <b>The tech: </b> Phaser.js, Javascript, HTML5, MAMP, Git
         </div>
-    </div> 
-</div>
-</div>
-</div>
+        <div class="project-button"><a href="#" class="button">Coming Soon</a></div>
+      </div>
+      <div class="col-sm-8 col-sm-pull-4">
+        <img src="/img/placeholder.png" alt="..." class="img-responsive project-img">
+        <div class="project-info">
+          <span id="info"> <i class="info fa fa-globe"></i> Web Development</span><br>
+          <span id="info"> <i class="info fa fa-calendar"></i> February 2015 </span><br>
+          <a class="info" href="#"> <span id="info"> <i class="info fa fa-github"></i> View the Code</span></a>
+        </div>
+        <div class="col-wrapper">
+          <div class="col-left">
+            <span class="people"> Developers </span><br>
+            <span class="people-text"> Sarah Yeo <br> Shikib Mehri </span>
+          </div>
+          <div class="col-right">
+            <span class="people"> Designers </span><br>
+            <span class="people-text"> Jack Li <br> Arabelle Hou </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-
-
-<!-- Projects Restaurant Quiz -->
-<div id="restaurant" class="projectpopup">
+  <!-- Projects Restaurant Quiz -->
+  <div id="restaurant" class="projectpopup">
     <div class="restaurant_close project-header">x</div>
     <div class="row">
-
-<div class="col-sm-4 col-sm-push-8 project-text">
-            <h3>Restaurant Quiz</h3>
+      <div class="col-sm-4 col-sm-push-8 project-text">
+        <h3>Restaurant Quiz</h3>
         <hr id="project-card">
-    <div class="project-text">  Restaurant Quiz is an interactive Android aplication centered around the concept of 
-      guessing various restaurant locations across Canada. Developed as a term project for a software design course 
-      at the University of British Columbia, it makes use of the Google Maps and Yelp APIs to provide users with 
-      quick, reliable data on current locations and directions.
-      <br> <br>
-      <b> The tech: </b> Android, Java, JUnit, IntelliJ, SVN
+        <div class="project-text">  Restaurant Quiz is an interactive Android aplication centered around the concept of guessing various restaurant locations across Canada. Developed as a term project for a software design course at the University of British Columbia, it makes use of the Google Maps and Yelp APIs to provide users with quick, reliable data on current locations and directions.<br><br>
+          <b> The tech: </b> Android, Java, JUnit, IntelliJ, SVN
+        </div>
+      </div>
+      <div class="col-sm-8 col-sm-pull-4">
+        <img src="/img/restaurant1.png" alt="..." class="img-responsive project-img">
+        <div class="project-info">
+          <span id="info"> <i class="info fa fa-mobile"></i> Mobile Development</span><br>
+          <span id="info"> <i class="info fa fa-calendar"></i> November 2014 </span><br>
+        </div>
+        <div class="col-wrapper">
+          <div class="col-left">
+            <span class="people"> Developers </span><br>
+            <span class="people-text"> Sarah Yeo <br> Jack Li </span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
 
-</div>
-<div class="col-sm-8 col-sm-pull-4">
-<img src="/img/restaurant1.png" alt="..." class="img-responsive project-img">
-    
-    <div class="project-info">
-
-    <span id="info"> <i class="info fa fa-mobile"></i> Mobile Development</span><br>
-    <span id="info"> <i class="info fa fa-calendar"></i> November 2014 </span><br>
-    </div>
-<div class="col-wrapper">
-    <div class="col-left">
-        <span class="people"> Developers </span><br>
-         <span class="people-text"> Sarah Yeo <br> Jack Li </span>
-
-    </div>
-    </div> 
-</div>
-</div>
-</div>
-
-
-
-<!-- Projects Research Project -->
-<div id="researchproject" class="projectpopup">
+  <!-- Projects Research Project -->
+  <div id="researchproject" class="projectpopup">
     <div class="researchproject_close project-header">x</div>
     <div class="row">
-
-<div class="col-sm-4 col-sm-push-8 project-text">
-            <h3>Research Project</h3>
+      <div class="col-sm-4 col-sm-push-8 project-text">
+        <h3>Research Project</h3>
         <hr id="project-card">
-    <div class="project-text">  <div class="research-project-title">
-      Discovering host specific adaptive mutations in pathogenic organisms.</div>Developed an analytical pipeline that, given a set of genomic reads isolated from a pathogen, is capable of identifying and ranking mutations by their potential biological significance. Presented at the Multidisciplinary Undergraduate Research Conference, 2015.
-       <br> <br>
-      <b> The tech: </b> Python, Make, Muscle, VCF Tools, RAxML, Git
-    </div>
-
-</div>
-<div class="col-sm-8 col-sm-pull-4">
-        <div id="carousel-copsnrobbers" class="carousel slide" data-ride="carousel" data-interval="5000">
-
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-copsnrobbers" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-copsnrobbers" data-slide-to="1"></li>
-  </ol>
- 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/img/project1.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
+        <div class="project-text">
+          <div class="research-project-title">Discovering host specific adaptive mutations in pathogenic organisms.</div>Developed an analytical pipeline that, given a set of genomic reads isolated from a pathogen, is capable of identifying and ranking mutations by their potential biological significance. Presented at the Multidisciplinary Undergraduate Research Conference, 2015.<br> <br>
+          <b> The tech: </b> Python, Make, Muscle, VCF Tools, RAxML, Git
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <img src="/img/project2.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
+      <div class="col-sm-8 col-sm-pull-4">
+        <div id="carousel-copsnrobbers" class="carousel slide" data-ride="carousel" data-interval="5000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-copsnrobbers" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-copsnrobbers" data-slide-to="1"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/img/project1.png" alt="..." class="img-responsive project-image">
+            </div>
+            <div class="item">
+              <img src="/img/project2.png" alt="..." class="img-responsive project-image">
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-copsnrobbers" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-copsnrobbers" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> <!-- Carousel -->
+
+        <div class="project-info">
+          <span id="info"> <i class="info fa fa-pencil-square-o"></i> Other</span><br>
+          <span id="info"> <i class="info fa fa-calendar"></i> March 2015 </span><br>
+          <a class="info" href="img/poster.pdf"> <span id="info"> <i class="info fa fa-picture-o"></i> View the Poster</span></a>
+        </div>
+        <div class="col-wrapper">
+          <div class="col-left">
+            <span class="people"> Mentor </span><br>
+            <span class="people-text"> Justin Chu</span>
+          </div>
+          <div class="col-right">
+            <span class="people"> Members </span><br>
+            <span class="people-text"> Sarah Yeo <br> Kevin Chow <br> Luke Schuster <br> Tsai Meng-Chi </span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-    <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-copsnrobbers" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-copsnrobbers" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> <!-- Carousel -->
-       
-    <div class="project-info">
 
-    <span id="info"> <i class="info fa fa-pencil-square-o"></i> Other</span><br>
-    <span id="info"> <i class="info fa fa-calendar"></i> March 2015 </span><br>
-    <a class="info" href="img/poster.pdf"> <span id="info"> <i class="info fa fa-picture-o"></i> View the Poster</span></a>
-    </div>
-<div class="col-wrapper">
-    <div class="col-left">
-        <span class="people"> Mentor </span><br>
-         <span class="people-text"> Justin Chu</span>
-
-    </div>
-        <div class="col-right">
-             <span class="people"> Members </span><br>
-              <span class="people-text"> Sarah Yeo <br> Kevin Chow <br> Luke Schuster <br> Tsai Meng-Chi </span>
-        </div>
-    </div> 
-</div>
-</div>
-</div>
-
-
-
-
-
-<!-- EcoGEM -->
-<div id="ecogem" class="projectpopup">
+  <!-- EcoGEM -->
+  <div id="ecogem" class="projectpopup">
     <div class="ecogem_close project-header">x</div>
     <div class="row">
-
-<div class="col-sm-4 col-sm-push-8 project-text">
-            <h3>EcoGEM</h3>
+      <div class="col-sm-4 col-sm-push-8 project-text">
+        <h3>EcoGEM</h3>
         <hr id="project-card">
-    <div class="project-text">  <div class="research-project-title">
-      Save gas, the environment and money!</div>
-      A must-have for the thrifty driver, EcoGEM is a Android application that rewards users for good drving habits.
-      Using the Mojio API, information about the vehicle's fuel efficientcy and distance traveled are obtained, 
-      used to calculate a "Gem Score" and if a monthly goal is met, monetary rewards are earned. 
-      Developed for nwHacks 2015.
-       <br> <br>
-      <b> The tech: </b> Mojio API, Android, Java, Android Studio, Git
-    </div>
-
-</div>
-<div class="col-sm-8 col-sm-pull-4 project-col">
-  
-<div id="carousel-ecogem" class="carousel slide" data-ride="carousel" data-interval="5000">
-
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-ecogem" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-ecogem" data-slide-to="1"></li>
-  </ol>
- 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/img/ecogem1.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
+        <div class="project-text">  <div class="research-project-title">Save gas, the environment and money!</div>
+        A must-have for the thrifty driver, EcoGEM is a Android application that rewards users for good drving habits. Using the Mojio API, information about the vehicle's fuel efficientcy and distance traveled are obtained, used to calculate a "Gem Score" and if a monthly goal is met, monetary rewards are earned. Developed for nwHacks 2015.<br> <br>
+        <b> The tech: </b> Mojio API, Android, Java, Android Studio, Git
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <img src="/img/ecogem2.png" alt="..." class="img-responsive project-image">
-      <div class="carousel-caption">
-          <h3></h3>
+      <div class="col-sm-8 col-sm-pull-4 project-col">
+        <div id="carousel-ecogem" class="carousel slide" data-ride="carousel" data-interval="5000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-ecogem" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-ecogem" data-slide-to="1"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/img/ecogem1.png" alt="..." class="img-responsive project-image">
+            </div>
+            <div class="item">
+              <img src="/img/ecogem2.png" alt="..." class="img-responsive project-image">
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-ecogem" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-ecogem" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div><!-- Carousel -->
+
+        <div class="project-info">
+          <span id="info"> <i class="info fa fa-mobile"></i> Mobile Development</span><br>
+          <span id="info"> <i class="info fa fa-calendar"></i> March 2015 </span><br>
+          <a class="info" href="https://github.com/sarahyeo/EcoGEM"> <span id="info"> <i class="info fa fa-github"></i> View the Code</span></a>
+        </div>
+        <div class="col-wrapper">
+          <div class="col-left">
+            <span class="people"> Developers </span><br>
+            <span class="people-text"> Sarah Yeo <br> Jack Li <br> Arabelle Hou</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-    <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-ecogem" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-ecogem" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-       
-        <div class="project-info">
 
-    <span id="info"> <i class="info fa fa-mobile"></i> Mobile Development</span><br>
-    <span id="info"> <i class="info fa fa-calendar"></i> March 2015 </span><br>
-    <a class="info" href="https://github.com/sarahyeo/EcoGEM"> <span id="info"> <i class="info fa fa-github"></i> View the Code</span></a>
-    </div>
-<div class="col-wrapper">
-    <div class="col-left">
-        <span class="people"> Developers </span><br>
-         <span class="people-text"> Sarah Yeo <br> Jack Li <br> Arabelle Hou</span>
-    </div>
-    </div> 
-</div>
-</div>
-</div>
-    </section>
+  </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="section text-center">
-        <div class="content">
-            <h2 class="wow bounceIn">Contact</h2>
-            <div class="project-byline byline"> "The best way to show a giraffe your love is to knit a scarf for it." <br> ― Anonymous </div>
-            <hr id="contact">
-        <div id="contact" class="row">
-          <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.4s"> 
-            <ul class="no-bullets">
-              <li class="contact"><a id="contact" href="mailto:sarah@sarahy.me"> <i class="contact fa fa-envelope-o"></i> sarah@sarahy.me</a></li>
-              <li class="contact"><a id="contact" href="http://ca.linkedin.com/in/sarahyeo"><i class="contact fa fa-linkedin-square"></i> https://linkedin.com/in/sarahyeo </a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.4s"> 
-            <ul class="no-bullets">
-              <li class="contact"><a id="contact" href="img/resume-web.pdf"><i class="contact fa fa-file-text-o"></i> Resume</a></li>
-              <li class="contact"><a id="contact" href="https://github.com/sarahyeo"><i class="contact fa fa-github fa-fw"></i> https://github.com/sarahyeo</a></li>
-            </ul>
-          </div>
+  <!-- ==============================================
+  CONTACT
+  =============================================== -->
+  <section id="contact" class="section text-center">
+    <div class="content">
+      <h2 class="wow bounceIn">Contact</h2>
+      <div class="project-byline byline"> "The best way to show a giraffe your love is to knit a scarf for it." <br> ― Anonymous </div>
+      <hr id="contact">
+      <div id="contact" class="row">
+        <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.4s"> 
+          <ul class="no-bullets">
+            <li class="contact"><a id="contact" href="mailto:sarah@sarahy.me"> <i class="contact fa fa-envelope-o"></i> sarah@sarahy.me</a></li>
+            <li class="contact"><a id="contact" href="http://ca.linkedin.com/in/sarahyeo"><i class="contact fa fa-linkedin-square"></i> https://linkedin.com/in/sarahyeo </a></li>
+          </ul>
         </div>
-        <hr id="contact-bottom">
-            </div>
-            <div class="container text-center wow bounceIn" data-wow-delay="1.0s">
-            <p class="footer">Thanks for visiting! <br> &copy; Sarah Yeo 2015</p>
+        <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.4s"> 
+          <ul class="no-bullets">
+            <li class="contact"><a id="contact" href="img/resume-web.pdf"><i class="contact fa fa-file-text-o"></i> Resume</a></li>
+            <li class="contact"><a id="contact" href="https://github.com/sarahyeo"><i class="contact fa fa-github fa-fw"></i> https://github.com/sarahyeo</a></li>
+          </ul>
         </div>
+      </div>
+      <hr id="contact-bottom">
+    </div>
+    <div class="container text-center wow bounceIn" data-wow-delay="1.0s">
+      <p class="footer">Thanks for visiting! <br> &copy; Sarah Yeo 2015</p>
+    </div>
+  </section>
 
+  <!-- ==============================================
+  SCRIPTS
+  =============================================== -->
+  <script src="js/jquery.min.js"></script>
 
-    </section>
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-
-    <script src="js/masonry.min.js"></script>
-    <script src="js/jquery.popupoverlay.js"></script>
+  <script src="js/masonry.min.js"></script>
+  <script src="js/jquery.popupoverlay.js"></script>
     
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/script.js"></script>
-
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
-
-</div>
-</body>
-
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  </body>
 </html>
