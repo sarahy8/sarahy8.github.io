@@ -64,4 +64,4 @@ function changeNews() {
     }
 }
 
-changeNews();x
+changeNews();
