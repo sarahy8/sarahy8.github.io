@@ -65,3 +65,19 @@ function changeNews() {
 }
 
 changeNews();
+
+window.onload=function(){
+  $('.autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: true,
+  infinite: true,
+  fade:true,
+  cssEase: 'linear',
+  touchThreshold: 1000,
+  mobileFirst: true,
+  arrows: false,
+});
+}

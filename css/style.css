@@ -77,6 +77,16 @@ h5
     color: #000;
 }
 
+h6
+{
+    font-family: 'Slabo 27px', serif;
+    font-size: 28px;
+    padding-left: 10px;
+    text-align: left;
+    color: #2980b9;
+    font-weight: 300;
+}
+
 .byline {
     font-size: 20px;
     color: #777;
@@ -186,9 +196,9 @@ a:focus {
 }
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
     background-color: #333;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
     font-size: 16px;
     font-weight: 400;
 }
@@ -241,9 +251,9 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    /*background-color: rgba(255,255,255,.1);*/
     color: #3498db;
-    background-color: #333;
+    /*background-color: #333;*/
+    background-color: transparent;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -263,13 +273,9 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         background-color: #333;
+        /*background-color: rgba(0, 0, 0, 0.8);*/
     }
-
-/*    .sylogo {
-        visibility: hidden;
-    }*/
 
 }
 
@@ -319,35 +325,35 @@ section#intro {
 
 @media only screen and (max-width: 640px) {
   .intro {
-    background: url(/img/background3.jpg) no-repeat bottom center fixed;
+    background: url(/img/background.jpg) no-repeat bottom center fixed;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1200px) {
   .intro {
-    background: url(/img/background3.jpg) no-repeat bottom center fixed;
+    background: url(/img/background.jpg) no-repeat bottom center fixed;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1920px) {
   .intro{
-    background: url(/img/background3.jpg) no-repeat bottom center fixed;
+    background: url(/img/background.jpg) no-repeat bottom center fixed;
   }
 }
 @media only screen and (min-width: 1921px) {
   .intro {
-    background: url(/img/background3.jpg) no-repeat bottom center fixed;
+    background: url(/img/background.jpg) no-repeat bottom center fixed;
   }
 }
 
 
 
- .background-image {
+.background-image {
     position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
 
-    background: url(/img/test-full11.png) no-repeat bottom center;
+    background: url(/img/cover.png) no-repeat bottom center;
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -837,6 +843,32 @@ body {
 
 .project-img {
     margin-bottom: 20px;
+}
+
+.experience-card {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin: auto;
+    max-width: 220px;
+}
+
+#experience-subtitle {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777;
+
+}
+
+#experience-date {
+    font-weight: 400;
+    font-style: italic;
 }
 
 
