@@ -50,22 +50,6 @@ $(document).ready(function () {
 
 });
 
-
-var div = $('.intro-text').hide(),
-    news = ['Software developer and student', 'Based out of Vancouver, BC'],
-    count = 0;
-
-function changeNews() {
-    div.fadeIn(1000).delay(4000).fadeOut(800, function() {
-        changeNews();
-    }).delay(200).text(news[count++])
-    if (count == news.length) {
-        count = 0;
-    }
-}
-
-changeNews();
-
 window.onload=function(){
   $('.autoplay').slick({
   slidesToShow: 1,
