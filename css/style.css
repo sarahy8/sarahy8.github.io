@@ -281,67 +281,38 @@ a:focus {
 
 /* ----- Intro -----*/
 
-/*
-section#intro {
-    background: url('/img/background4.jpg') no-repeat 50% 50% fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    color: #fff;
-    height: 100vh;
-    min-height: 350px;
-}
-
-
-
-.overlay {
-    background-color: #22A39F;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.4;
-    filter: alpha(opacity=4);
-    z-index: 2;
-}
-
-.background-image {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 1;
-
-    background: url(/img/background1.jpg) no-repeat bottom center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-
-}*/
-
 @media only screen and (max-width: 640px) {
   .intro {
-    background: url(/img/background.jpg) no-repeat bottom center fixed;
+    background: url(/img/background_d640.jpg) no-repeat bottom center fixed;
+  }
+    .background-image {
+    background: url(/img/cover_d640.png) no-repeat bottom center;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1200px) {
   .intro {
-    background: url(/img/background.jpg) no-repeat bottom center fixed;
+    background: url(/img/background_d1200.jpg) no-repeat bottom center fixed;
+  }
+    .background-image {
+    background: url(/img/cover_d1200.png) no-repeat bottom center;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1920px) {
   .intro{
-    background: url(/img/background.jpg) no-repeat bottom center fixed;
+    background: url(/img/background_d1920.jpg) no-repeat bottom center fixed;
+  }
+    .background-image {
+    background: url(/img/cover_d1920.png) no-repeat bottom center;
   }
 }
 @media only screen and (min-width: 1921px) {
   .intro {
     background: url(/img/background.jpg) no-repeat bottom center fixed;
   }
+
+  .background-image {
+    background: url(/img/cover.png) no-repeat bottom center;
+  }
 }
 
 
@@ -352,8 +323,6 @@ section#intro {
     bottom: 0px;
     left: 0px;
     right: 0px;
-
-    background: url(/img/cover.png) no-repeat bottom center;
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
