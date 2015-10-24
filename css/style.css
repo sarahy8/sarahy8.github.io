@@ -34,6 +34,12 @@ html {
     padding-right: 20px;
 }
 
+.center {
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+
 h1 {
     text-align: center;
     font-weight: 300;
@@ -58,6 +64,7 @@ h3
     color: #3498DB;
     font-weight: 300;
 }
+
 
 
 h4
@@ -87,6 +94,15 @@ h6
     font-weight: 300;
 }
 
+.research-title
+{
+    font-family: 'Slabo 27px', serif;
+    font-size: 22px;
+    text-align: center;
+    color: #3498DB;
+    font-weight: 300;
+}
+
 .byline {
     font-size: 20px;
     color: #777;
@@ -110,7 +126,7 @@ hr#intro {
 
 hr#project-card {
     border-color: rgba(0, 0, 0, 0.6);
-    margin: 10px 15px;
+    margin: 10px 50px;
     padding-top: 5px;
 }
 
@@ -431,7 +447,7 @@ section#about {
 
 img.me {
     width: 210px;
-    margin: 30px auto;
+    margin: auto;
 }
 
 
@@ -489,7 +505,7 @@ section#projects {
     text-align: center;
     top: 285px;
     left: 0;
-    background-color:  rgba(60,156,221, 0.9);
+    background-color:  rgba(41, 128, 185, 0.9);
    /* background-color: rgba(0, 0, 0, 0.8);*/
     -webkit-transition: top 0.4s ease-in-out;
     -moz-transition: top 0.4s ease-in-out;
@@ -524,7 +540,7 @@ hr#info {
 
 #research.info-text {
     font-style: italic;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .info-tag {
@@ -604,10 +620,17 @@ img.color {
     margin: auto;
 }
 
+.padded {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
 
 .project-text {
     font-size: 16px;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 20px;
 }
@@ -812,6 +835,8 @@ body {
 
 .project-img {
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .experience-card {
@@ -821,7 +846,7 @@ body {
 
 .logo {
     margin: auto;
-    max-width: 220px;
+    margin-top: 40px;
 }
 
 #experience-subtitle {
