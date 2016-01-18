@@ -302,7 +302,7 @@ a:focus {
     background: url(/img/background_d640.jpg) no-repeat bottom center fixed;
   }
     .background-image {
-    background: url(/img/cover_d640.png) no-repeat bottom center;
+    background: url(/img/cover_d1200.png) no-repeat bottom center;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1200px) {
